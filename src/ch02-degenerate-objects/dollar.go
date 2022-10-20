@@ -1,9 +1,9 @@
 package money
 
-type Doller struct {
+type Dollar struct {
     amount int64
 }
 
-func (d *Doller) Times(multiplier int64) Doller {
-    return Doller{amount: d.amount * multiplier}
+func (d *Dollar) Times(multiplier int64) Dollar {
+    return Dollar{amount: d.amount * multiplier}
 }
