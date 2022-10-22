@@ -1,3 +1,3 @@
-module tdd/money
+module tdd
 
 go 1.19

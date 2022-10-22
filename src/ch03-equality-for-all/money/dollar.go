@@ -1,13 +1,13 @@
 package money
 
 type Dollar struct {
-    amount int64
+    Amount int64
 }
 
 func (d *Dollar) Times(multiplier int64) Dollar {
-    return Dollar{amount: d.amount * multiplier}
+    return Dollar{Amount: d.Amount * multiplier}
 }
 
 func (d *Dollar) Equals(dollar Dollar) bool {
-    return d.amount == dollar.amount
+    return d.Amount == dollar.Amount
 }
