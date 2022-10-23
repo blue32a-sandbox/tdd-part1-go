@@ -13,5 +13,5 @@ func main() {
     fmt.Printf("ten: %v\n", ten)
     fmt.Printf("five: %v\n", five)
 
-    fmt.Printf("ten == ten: %t\n", ten.Equals(money.NewDollar(5)))
+    fmt.Printf("ten == ten: %t\n", ten.Equals(money.NewDollar(10)))
 }
