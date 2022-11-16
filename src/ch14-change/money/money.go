@@ -26,7 +26,7 @@ func (m Money) Plus(addend Money) Expression {
     return Sum{m, addend}
 }
 
-func (m Money) reduce(bank Bank, to string) Money {
+func (m Money) Reduce(bank Bank, to string) Money {
     rate := bank.Rate(m.currency, to)
     return Money{m.amount / rate, to}
 }

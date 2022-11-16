@@ -5,7 +5,7 @@ type Sum struct {
     addend Money
 }
 
-func (s Sum) reduce(to string) Money {
+func (s Sum) Reduce(to string) Money {
     amount := s.augend.amount + s.addend.amount
     return Money{amount, to}
 }

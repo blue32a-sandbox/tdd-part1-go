@@ -9,7 +9,7 @@ func NewBank() Bank {
 }
 
 func (b Bank) Reduce(source Expression, to string) Money {
-    return source.reduce(b, to)
+    return source.Reduce(b, to)
 }
 
 func (b Bank) AddRate(from string, to string, rate int64) {

@@ -3,5 +3,5 @@ package money
 type Bank struct {}
 
 func (b Bank) reduce(source Expression, to string) Money {
-    return source.reduce(to)
+    return source.Reduce(to)
 }

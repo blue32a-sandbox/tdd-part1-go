@@ -26,7 +26,7 @@ func (m Money) Plus(addend Money) Expression {
     return Sum{m, addend}
 }
 
-func (m Money) reduce(to string) Money {
+func (m Money) Reduce(to string) Money {
     return m
 }
 
