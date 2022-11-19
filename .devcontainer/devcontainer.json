@@ -1,0 +1,13 @@
+{
+    "name": "Go",
+    "dockerComposeFile": ["../docker-compose.yml"],
+    "service": "golang",
+    "postCreateCommand": "apk update && apk add -U --no-cache openssh git",
+    "workspaceFolder": "/app",
+    "extensions": [
+        "EditorConfig.EditorConfig",
+        "mhutchie.git-graph",
+        "eamodio.gitlens",
+        "golang.go"
+    ]
+}
